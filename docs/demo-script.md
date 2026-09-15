@@ -11,4 +11,6 @@ Use synthetic fixtures only. Start in the repository after `npm ci` and `npm run
 
 After publication the recorded command can become `npx faillens analyze artifacts/results.json`, using the confirmed package name. Do not imply the deterministic output is a live AI run. An optional separate AI clip should show the provider label and fallback honestly.
 
-Record with a terminal recorder of your choice, trim pauses, export a GIF, and place it under `docs/assets/demo.gif`. The asset is deliberately pending; no synthetic claim of a completed recording is made.
+`docs/assets/demo.gif` is a 30-second rendered walkthrough built from real deterministic CLI output. It is labelled as rendered output, not a recording of an interactive terminal or a live AI call. Maintainers can regenerate it with Python and Pillow using `python scripts/render-demo.py` after `npm run build`. Python is not needed to install, test or run FailLens.
+
+For a future live recording, use a terminal recorder, trim pauses, and replace this asset. Do not describe the current rendered walkthrough as a screen recording.

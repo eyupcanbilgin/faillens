@@ -24,10 +24,14 @@ Coverage is scoped to parser, privacy and core modules, not the entire repositor
 
 The real demo intentionally produces four failed tests and one retry-recovered test. Its harness independently checks that five analyses match their expected categories, and exits successfully only then. This behavior is specific to the demo; consumer CI preserves the original Playwright failure.
 
-## Not executed in this implementation session
+## Release preparation follow-up
+
+The project has been pushed to [eyupcanbilgin/faillens](https://github.com/eyupcanbilgin/faillens) as a private release candidate. Hosted verification is tracked in the [CI runs](https://github.com/eyupcanbilgin/faillens/actions/workflows/ci.yml). Reporting contacts are configured, and the README includes a rendered demo GIF based on actual CLI output.
+
+## Not executed
 
 - Live OpenAI requests: no API key provisioned or used; no paid model calls made. SDK types and request construction were checked, including a mocked structured-output request.
-- GitHub-hosted Linux/Windows CI: the workflow is prepared, but no remote repository was created or run.
-- Public npm/GitHub publication, registry name reservation, demo GIF recording, and maintainer contact setup.
+- Public npm/GitHub publication and npm package-name reservation. Registry lookup returned no existing `faillens` package; this is not a reservation.
+- Live terminal video recording. The supplied GIF is transparently labelled as a rendered CLI walkthrough.
 
 See [launch checklist](launch.md) for those final publishing steps and [release notes](release-v0.1.0.md) for the prepared v0.1.0 announcement.

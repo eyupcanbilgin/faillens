@@ -29,7 +29,9 @@ A failure message rarely explains whether to investigate a service, a locator, c
 
 Run `npm run demo` for instant, deterministic output from a synthetic fixture. No browser download or API key is needed.
 
-**Demo GIF:** recording is pending; [the 30-second recording script](docs/demo-script.md) is ready. The runnable demo is the source of truth.
+![30-second deterministic FailLens walkthrough](docs/assets/demo.gif)
+
+The animation is rendered from actual CLI output with a synthetic fixture; it is not a live terminal recording or an AI run. [Recording and regeneration details](docs/demo-script.md).
 
 The real browser demo has five deliberate scenarios: order API 500, stale button locator, retry recovery, refused dependency connection, and assertion-only unknown. It also collects screenshots and traces locally.
 
