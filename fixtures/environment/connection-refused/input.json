@@ -1,0 +1,31 @@
+{
+  "suites": [
+    {
+      "title": "checkout.spec.ts",
+      "specs": [
+        {
+          "title": "environment/connection-refused",
+          "file": "checkout.spec.ts",
+          "id": "environment/connection-refused",
+          "tests": [
+            {
+              "projectName": "chromium",
+              "expectedStatus": "passed",
+              "results": [
+                {
+                  "status": "failed",
+                  "retry": 0,
+                  "error": {
+                    "message": "page.goto: net::ERR_CONNECTION_REFUSED"
+                  },
+                  "steps": [],
+                  "attachments": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

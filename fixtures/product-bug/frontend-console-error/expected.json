@@ -1,0 +1,43 @@
+{
+  "allowedCategories": ["unknown"],
+  "requiredEvidenceIds": [],
+  "normalizedEvidence": {
+    "testId": "e0c9581627d0d25be4c9",
+    "title": "checkout.spec.ts › product-bug/frontend-console-error › chromium",
+    "file": "checkout.spec.ts",
+    "steps": [],
+    "consoleErrors": [
+      {
+        "text": "TypeError: cannot read property of undefined",
+        "type": "error",
+        "id": "console-1"
+      }
+    ],
+    "networkFailures": [],
+    "retry": {
+      "id": "retry-1",
+      "attempt": 1,
+      "previousAttempts": 0,
+      "eventuallyPassed": false
+    },
+    "capture": {
+      "id": "capture-1",
+      "networkComplete": true,
+      "requestsObserved": 1
+    },
+    "attachments": [
+      {
+        "id": "attachment-1",
+        "name": "faillens-evidence-v1",
+        "contentType": "application/json"
+      }
+    ],
+    "limitations": [],
+    "error": {
+      "id": "error-1",
+      "message": "Expected confirmation",
+      "stack": ""
+    }
+  },
+  "signals": []
+}

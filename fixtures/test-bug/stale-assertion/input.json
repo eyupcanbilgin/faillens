@@ -1,0 +1,31 @@
+{
+  "suites": [
+    {
+      "title": "checkout.spec.ts",
+      "specs": [
+        {
+          "title": "test-bug/stale-assertion",
+          "file": "checkout.spec.ts",
+          "id": "test-bug/stale-assertion",
+          "tests": [
+            {
+              "projectName": "chromium",
+              "expectedStatus": "passed",
+              "results": [
+                {
+                  "status": "failed",
+                  "retry": 0,
+                  "error": {
+                    "message": "Expected total 10, received 11"
+                  },
+                  "steps": [],
+                  "attachments": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

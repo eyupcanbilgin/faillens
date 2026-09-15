@@ -1,0 +1,10 @@
+node_modules/
+dist/
+coverage/
+artifacts/
+test-results/
+work/
+*.tgz
+.env*
+!.env.example
+eval-results.json

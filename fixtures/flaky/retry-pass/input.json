@@ -1,0 +1,35 @@
+{
+  "suites": [
+    {
+      "title": "checkout.spec.ts",
+      "specs": [
+        {
+          "title": "flaky/retry-pass",
+          "file": "checkout.spec.ts",
+          "id": "flaky/retry-pass",
+          "tests": [
+            {
+              "projectName": "chromium",
+              "expectedStatus": "passed",
+              "results": [
+                {
+                  "status": "failed",
+                  "retry": 0,
+                  "error": {
+                    "message": "Expected confirmation"
+                  },
+                  "steps": [],
+                  "attachments": []
+                },
+                {
+                  "status": "passed",
+                  "retry": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

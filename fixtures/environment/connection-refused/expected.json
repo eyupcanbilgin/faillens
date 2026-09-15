@@ -1,0 +1,39 @@
+{
+  "allowedCategories": ["environment"],
+  "requiredEvidenceIds": ["error-1"],
+  "normalizedEvidence": {
+    "testId": "bceed1994172a190ef79",
+    "title": "checkout.spec.ts › environment/connection-refused › chromium",
+    "file": "checkout.spec.ts",
+    "steps": [],
+    "consoleErrors": [],
+    "networkFailures": [],
+    "retry": {
+      "id": "retry-1",
+      "attempt": 1,
+      "previousAttempts": 0,
+      "eventuallyPassed": false
+    },
+    "capture": {
+      "id": "capture-1",
+      "networkComplete": false
+    },
+    "attachments": [],
+    "limitations": [
+      "Complete network capture unavailable; absence of requests is not evidence"
+    ],
+    "error": {
+      "id": "error-1",
+      "message": "page.goto: net::ERR_CONNECTION_REFUSED",
+      "stack": ""
+    }
+  },
+  "signals": [
+    {
+      "category": "environment",
+      "strength": "strong",
+      "reason": "Connection or browser infrastructure failure observed",
+      "evidenceIds": ["error-1"]
+    }
+  ]
+}

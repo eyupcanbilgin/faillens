@@ -1,0 +1,35 @@
+{
+  "suites": [
+    {
+      "title": "checkout.spec.ts",
+      "specs": [
+        {
+          "title": "flaky/timeout-then-pass",
+          "file": "checkout.spec.ts",
+          "id": "flaky/timeout-then-pass",
+          "tests": [
+            {
+              "projectName": "chromium",
+              "expectedStatus": "passed",
+              "results": [
+                {
+                  "status": "failed",
+                  "retry": 0,
+                  "error": {
+                    "message": "Timeout 1000ms exceeded"
+                  },
+                  "steps": [],
+                  "attachments": []
+                },
+                {
+                  "status": "passed",
+                  "retry": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

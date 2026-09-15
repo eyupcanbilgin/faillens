@@ -1,0 +1,57 @@
+{
+  "allowedCategories": ["test_bug"],
+  "requiredEvidenceIds": ["error-1", "capture-1", "step-1"],
+  "normalizedEvidence": {
+    "testId": "4dafef6d6164996991ce",
+    "title": "checkout.spec.ts › test-bug/broken-locator › chromium",
+    "file": "checkout.spec.ts",
+    "steps": [
+      {
+        "id": "step-1",
+        "title": "Open checkout",
+        "status": "passed",
+        "durationMs": 10
+      },
+      {
+        "id": "step-2",
+        "title": "Submit order",
+        "status": "failed",
+        "durationMs": 1000
+      }
+    ],
+    "consoleErrors": [],
+    "networkFailures": [],
+    "retry": {
+      "id": "retry-1",
+      "attempt": 1,
+      "previousAttempts": 0,
+      "eventuallyPassed": false
+    },
+    "capture": {
+      "id": "capture-1",
+      "networkComplete": true,
+      "requestsObserved": 0
+    },
+    "attachments": [
+      {
+        "id": "attachment-1",
+        "name": "faillens-evidence-v1",
+        "contentType": "application/json"
+      }
+    ],
+    "limitations": [],
+    "error": {
+      "id": "error-1",
+      "message": "locator.click: Timeout 1000ms exceeded waiting for getByRole(\"button\", { name: \"Submit order\" })",
+      "stack": ""
+    }
+  },
+  "signals": [
+    {
+      "category": "test_bug",
+      "strength": "medium",
+      "reason": "Locator timed out after a completed step with zero requests in a complete capture",
+      "evidenceIds": ["error-1", "capture-1", "step-1"]
+    }
+  ]
+}

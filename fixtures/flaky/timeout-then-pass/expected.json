@@ -1,0 +1,39 @@
+{
+  "allowedCategories": ["flaky_suspect"],
+  "requiredEvidenceIds": ["retry-1"],
+  "normalizedEvidence": {
+    "testId": "a5ccb2fd355c63a1572d",
+    "title": "checkout.spec.ts › flaky/timeout-then-pass › chromium",
+    "file": "checkout.spec.ts",
+    "steps": [],
+    "consoleErrors": [],
+    "networkFailures": [],
+    "retry": {
+      "id": "retry-1",
+      "attempt": 1,
+      "previousAttempts": 0,
+      "eventuallyPassed": true
+    },
+    "capture": {
+      "id": "capture-1",
+      "networkComplete": false
+    },
+    "attachments": [],
+    "limitations": [
+      "Complete network capture unavailable; absence of requests is not evidence"
+    ],
+    "error": {
+      "id": "error-1",
+      "message": "Timeout 1000ms exceeded",
+      "stack": ""
+    }
+  },
+  "signals": [
+    {
+      "category": "flaky_suspect",
+      "strength": "strong",
+      "reason": "A failed attempt was followed by a successful retry; cause remains unverified",
+      "evidenceIds": ["retry-1"]
+    }
+  ]
+}

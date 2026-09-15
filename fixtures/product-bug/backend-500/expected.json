@@ -1,0 +1,64 @@
+{
+  "allowedCategories": ["product_bug"],
+  "requiredEvidenceIds": ["network-1"],
+  "normalizedEvidence": {
+    "testId": "f2055ba7dd9761456761",
+    "title": "checkout.spec.ts › product-bug/backend-500 › chromium",
+    "file": "checkout.spec.ts",
+    "steps": [
+      {
+        "id": "step-1",
+        "title": "Place order",
+        "status": "passed",
+        "durationMs": 12
+      }
+    ],
+    "consoleErrors": [
+      {
+        "text": "Order creation failed",
+        "type": "error",
+        "id": "console-1"
+      }
+    ],
+    "networkFailures": [
+      {
+        "method": "POST",
+        "url": "https://demo.test/api/orders",
+        "status": 500,
+        "id": "network-1"
+      }
+    ],
+    "retry": {
+      "id": "retry-1",
+      "attempt": 1,
+      "previousAttempts": 0,
+      "eventuallyPassed": false
+    },
+    "capture": {
+      "id": "capture-1",
+      "networkComplete": true,
+      "requestsObserved": 1
+    },
+    "attachments": [
+      {
+        "id": "attachment-1",
+        "name": "faillens-evidence-v1",
+        "contentType": "application/json"
+      }
+    ],
+    "limitations": [],
+    "error": {
+      "id": "error-1",
+      "message": "Expected order confirmation to be visible",
+      "stack": ""
+    }
+  },
+  "signals": [
+    {
+      "category": "product_bug",
+      "strength": "medium",
+      "reason": "HTTP 5xx observed; application or upstream service failure is possible",
+      "evidenceIds": ["network-1"]
+    }
+  ]
+}

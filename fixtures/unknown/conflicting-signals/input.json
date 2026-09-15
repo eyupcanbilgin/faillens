@@ -1,0 +1,37 @@
+{
+  "suites": [
+    {
+      "title": "checkout.spec.ts",
+      "specs": [
+        {
+          "title": "unknown/conflicting-signals",
+          "file": "checkout.spec.ts",
+          "id": "unknown/conflicting-signals",
+          "tests": [
+            {
+              "projectName": "chromium",
+              "expectedStatus": "passed",
+              "results": [
+                {
+                  "status": "failed",
+                  "retry": 0,
+                  "error": {
+                    "message": "Expected order"
+                  },
+                  "steps": [],
+                  "attachments": [
+                    {
+                      "name": "faillens-evidence-v1",
+                      "contentType": "application/json",
+                      "body": "eyJ2ZXJzaW9uIjoxLCJuZXR3b3JrQ29tcGxldGUiOnRydWUsInJlcXVlc3RzT2JzZXJ2ZWQiOjEsImNvbnNvbGVFcnJvcnMiOltdLCJuZXR3b3JrRmFpbHVyZXMiOlt7Im1ldGhvZCI6IlBPU1QiLCJ1cmwiOiJodHRwczovL2RlbW8udGVzdC9hcGkvb3JkZXJzIiwic3RhdHVzIjo1MDB9LHsibWV0aG9kIjoiR0VUIiwidXJsIjoiaHR0cHM6Ly9kZW1vLnRlc3QvYXBpL21lIiwic3RhdHVzIjo0MDN9XX0="
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "allowedCategories": ["unknown"],
+  "requiredEvidenceIds": [],
+  "normalizedEvidence": {
+    "testId": "3d9f1f1094526ffb3741",
+    "title": "checkout.spec.ts › privacy/jwt-token › chromium",
+    "file": "checkout.spec.ts",
+    "steps": [],
+    "consoleErrors": [],
+    "networkFailures": [],
+    "retry": {
+      "id": "retry-1",
+      "attempt": 1,
+      "previousAttempts": 0,
+      "eventuallyPassed": false
+    },
+    "capture": {
+      "id": "capture-1",
+      "networkComplete": false
+    },
+    "attachments": [],
+    "limitations": [
+      "Complete network capture unavailable; absence of requests is not evidence"
+    ],
+    "error": {
+      "id": "error-1",
+      "message": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzeW50aGV0aWMifQ.c3ludGhldGlj",
+      "stack": ""
+    }
+  },
+  "signals": []
+}

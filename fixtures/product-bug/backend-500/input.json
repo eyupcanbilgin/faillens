@@ -1,0 +1,42 @@
+{
+  "suites": [
+    {
+      "title": "checkout.spec.ts",
+      "specs": [
+        {
+          "title": "product-bug/backend-500",
+          "file": "checkout.spec.ts",
+          "id": "product-bug/backend-500",
+          "tests": [
+            {
+              "projectName": "chromium",
+              "expectedStatus": "passed",
+              "results": [
+                {
+                  "status": "failed",
+                  "retry": 0,
+                  "error": {
+                    "message": "Expected order confirmation to be visible"
+                  },
+                  "steps": [
+                    {
+                      "title": "Place order",
+                      "duration": 12
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "faillens-evidence-v1",
+                      "contentType": "application/json",
+                      "body": "eyJ2ZXJzaW9uIjoxLCJuZXR3b3JrQ29tcGxldGUiOnRydWUsInJlcXVlc3RzT2JzZXJ2ZWQiOjEsImNvbnNvbGVFcnJvcnMiOlt7InR5cGUiOiJlcnJvciIsInRleHQiOiJPcmRlciBjcmVhdGlvbiBmYWlsZWQifV0sIm5ldHdvcmtGYWlsdXJlcyI6W3sibWV0aG9kIjoiUE9TVCIsInVybCI6Imh0dHBzOi8vZGVtby50ZXN0L2FwaS9vcmRlcnMiLCJzdGF0dXMiOjUwMH1dfQ=="
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

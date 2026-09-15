@@ -1,0 +1,51 @@
+{
+  "allowedCategories": ["environment"],
+  "requiredEvidenceIds": ["network-1"],
+  "normalizedEvidence": {
+    "testId": "2f8217903720066f5433",
+    "title": "checkout.spec.ts › environment/unauthorized › chromium",
+    "file": "checkout.spec.ts",
+    "steps": [],
+    "consoleErrors": [],
+    "networkFailures": [
+      {
+        "method": "GET",
+        "url": "https://demo.test/api/me",
+        "status": 401,
+        "id": "network-1"
+      }
+    ],
+    "retry": {
+      "id": "retry-1",
+      "attempt": 1,
+      "previousAttempts": 0,
+      "eventuallyPassed": false
+    },
+    "capture": {
+      "id": "capture-1",
+      "networkComplete": true,
+      "requestsObserved": 1
+    },
+    "attachments": [
+      {
+        "id": "attachment-1",
+        "name": "faillens-evidence-v1",
+        "contentType": "application/json"
+      }
+    ],
+    "limitations": [],
+    "error": {
+      "id": "error-1",
+      "message": "Expected account data",
+      "stack": ""
+    }
+  },
+  "signals": [
+    {
+      "category": "environment",
+      "strength": "medium",
+      "reason": "HTTP 401/403 observed; check credentials and permissions",
+      "evidenceIds": ["network-1"]
+    }
+  ]
+}

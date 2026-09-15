@@ -1,0 +1,32 @@
+{
+  "allowedCategories": ["unknown"],
+  "requiredEvidenceIds": [],
+  "normalizedEvidence": {
+    "testId": "b7ee33c20b1613f1d50b",
+    "title": "checkout.spec.ts › unknown/assertion-only › chromium",
+    "file": "checkout.spec.ts",
+    "steps": [],
+    "consoleErrors": [],
+    "networkFailures": [],
+    "retry": {
+      "id": "retry-1",
+      "attempt": 1,
+      "previousAttempts": 0,
+      "eventuallyPassed": false
+    },
+    "capture": {
+      "id": "capture-1",
+      "networkComplete": false
+    },
+    "attachments": [],
+    "limitations": [
+      "Complete network capture unavailable; absence of requests is not evidence"
+    ],
+    "error": {
+      "id": "error-1",
+      "message": "Expected true, received false",
+      "stack": ""
+    }
+  },
+  "signals": []
+}

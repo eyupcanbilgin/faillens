@@ -1,0 +1,37 @@
+{
+  "suites": [
+    {
+      "title": "checkout.spec.ts",
+      "specs": [
+        {
+          "title": "environment/unauthorized",
+          "file": "checkout.spec.ts",
+          "id": "environment/unauthorized",
+          "tests": [
+            {
+              "projectName": "chromium",
+              "expectedStatus": "passed",
+              "results": [
+                {
+                  "status": "failed",
+                  "retry": 0,
+                  "error": {
+                    "message": "Expected account data"
+                  },
+                  "steps": [],
+                  "attachments": [
+                    {
+                      "name": "faillens-evidence-v1",
+                      "contentType": "application/json",
+                      "body": "eyJ2ZXJzaW9uIjoxLCJuZXR3b3JrQ29tcGxldGUiOnRydWUsInJlcXVlc3RzT2JzZXJ2ZWQiOjEsImNvbnNvbGVFcnJvcnMiOltdLCJuZXR3b3JrRmFpbHVyZXMiOlt7Im1ldGhvZCI6IkdFVCIsInVybCI6Imh0dHBzOi8vZGVtby50ZXN0L2FwaS9tZSIsInN0YXR1cyI6NDAxfV19"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

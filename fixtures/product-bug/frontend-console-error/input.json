@@ -1,0 +1,37 @@
+{
+  "suites": [
+    {
+      "title": "checkout.spec.ts",
+      "specs": [
+        {
+          "title": "product-bug/frontend-console-error",
+          "file": "checkout.spec.ts",
+          "id": "product-bug/frontend-console-error",
+          "tests": [
+            {
+              "projectName": "chromium",
+              "expectedStatus": "passed",
+              "results": [
+                {
+                  "status": "failed",
+                  "retry": 0,
+                  "error": {
+                    "message": "Expected confirmation"
+                  },
+                  "steps": [],
+                  "attachments": [
+                    {
+                      "name": "faillens-evidence-v1",
+                      "contentType": "application/json",
+                      "body": "eyJ2ZXJzaW9uIjoxLCJuZXR3b3JrQ29tcGxldGUiOnRydWUsInJlcXVlc3RzT2JzZXJ2ZWQiOjEsImNvbnNvbGVFcnJvcnMiOlt7InR5cGUiOiJlcnJvciIsInRleHQiOiJUeXBlRXJyb3I6IGNhbm5vdCByZWFkIHByb3BlcnR5IG9mIHVuZGVmaW5lZCJ9XSwibmV0d29ya0ZhaWx1cmVzIjpbXX0="
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

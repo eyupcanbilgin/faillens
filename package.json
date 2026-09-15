@@ -1,0 +1,95 @@
+{
+  "name": "faillens",
+  "version": "0.1.0",
+  "description": "Evidence-first AI failure triage for Playwright",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "bin": {
+    "faillens": "dist/cli.js"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./playwright": "./dist/adapters/playwright/collector.js"
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "README.tr.md",
+    "LICENSE",
+    "docs",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "CODE_OF_CONDUCT.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "demo": "tsx src/cli.ts analyze fixtures/product-bug/backend-500/input.json",
+    "demo:ai": "tsx src/cli.ts analyze fixtures/product-bug/backend-500/input.json --ai openai",
+    "demo:playwright": "tsx scripts/demo-playwright.ts",
+    "eval": "tsx scripts/evaluate.ts",
+    "test:ai:live": "tsx scripts/live-ai.ts",
+    "test:package": "node scripts/package-smoke.mjs",
+    "check": "npm run typecheck && npm run lint && npm test && npm run build",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "^1.9.1",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.222.0",
+    "@opentelemetry/sdk-node": "^0.222.0",
+    "commander": "^14.0.3",
+    "openai": "^6.49.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@opentelemetry/sdk-trace-base": "^2.11.0",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.0",
+    "@vitest/coverage-v8": "^4.1.11",
+    "eslint": "^10.10.0",
+    "prettier": "^3.9.6",
+    "tsx": "^4.23.13",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.0",
+    "vitest": "^4.1.11"
+  },
+  "peerDependencies": {
+    "@playwright/test": ">=1.50.0 <2"
+  },
+  "peerDependenciesMeta": {
+    "@playwright/test": {
+      "optional": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eyupcanbilgin/faillens.git"
+  },
+  "homepage": "https://github.com/eyupcanbilgin/faillens#readme",
+  "bugs": {
+    "url": "https://github.com/eyupcanbilgin/faillens/issues"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "test-automation",
+    "qa",
+    "failure-triage",
+    "ai",
+    "opentelemetry"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

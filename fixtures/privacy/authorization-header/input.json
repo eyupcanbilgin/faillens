@@ -1,0 +1,31 @@
+{
+  "suites": [
+    {
+      "title": "checkout.spec.ts",
+      "specs": [
+        {
+          "title": "privacy/authorization-header",
+          "file": "checkout.spec.ts",
+          "id": "privacy/authorization-header",
+          "tests": [
+            {
+              "projectName": "chromium",
+              "expectedStatus": "passed",
+              "results": [
+                {
+                  "status": "failed",
+                  "retry": 0,
+                  "error": {
+                    "message": "Authorization: Bearer SYNTHETIC_SECRET\nCookie: session=SYNTHETIC_COOKIE"
+                  },
+                  "steps": [],
+                  "attachments": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

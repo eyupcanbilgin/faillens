@@ -1,0 +1,49 @@
+{
+  "suites": [
+    {
+      "title": "checkout.spec.ts",
+      "specs": [
+        {
+          "title": "test-bug/broken-locator",
+          "file": "checkout.spec.ts",
+          "id": "test-bug/broken-locator",
+          "tests": [
+            {
+              "projectName": "chromium",
+              "expectedStatus": "passed",
+              "results": [
+                {
+                  "status": "failed",
+                  "retry": 0,
+                  "error": {
+                    "message": "locator.click: Timeout 1000ms exceeded waiting for getByRole(\"button\", { name: \"Submit order\" })"
+                  },
+                  "steps": [
+                    {
+                      "title": "Open checkout",
+                      "duration": 10
+                    },
+                    {
+                      "title": "Submit order",
+                      "duration": 1000,
+                      "error": {
+                        "message": "Timeout"
+                      }
+                    }
+                  ],
+                  "attachments": [
+                    {
+                      "name": "faillens-evidence-v1",
+                      "contentType": "application/json",
+                      "body": "eyJ2ZXJzaW9uIjoxLCJuZXR3b3JrQ29tcGxldGUiOnRydWUsInJlcXVlc3RzT2JzZXJ2ZWQiOjAsImNvbnNvbGVFcnJvcnMiOltdLCJuZXR3b3JrRmFpbHVyZXMiOltdfQ=="
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
