@@ -50,9 +50,9 @@ program
     ) => {
       const stop = await startTelemetry(options.telemetry);
       try {
-        const limit = Number(options.maxFailures);
-        if (!Number.isInteger(limit) || limit < 1 || limit > 100)
+        if (!/^(?:[1-9]\d?|100)$/.test(options.maxFailures))
           throw new Error("max-failures must be an integer from 1 to 100");
+        const limit = Number(options.maxFailures);
         if (options.ai === "openai" && !process.env.OPENAI_API_KEY)
           throw new Error(
             "AI mode requires OPENAI_API_KEY. Use --ai off for local diagnostics.",
